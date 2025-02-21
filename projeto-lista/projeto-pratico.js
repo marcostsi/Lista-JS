@@ -7,6 +7,7 @@ class Task {
 class TaskList {
     constructor() {
         this.tasks = [];
+        this.renderTasks();
     }
 
     addTask(taskName) {
@@ -50,5 +51,3 @@ document.getElementById("taskForm").addEventListener("submit", function(event) {
     taskList.addTask(taskInput.value);
     taskInput.value = "";
 });
-
-// Aqui está um projeto prático usando uma lista de tarefas. Ele permite adicionar, remover e listar tarefas.
