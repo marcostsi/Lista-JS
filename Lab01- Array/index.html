@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações de Lista Ligada na Página Web</title>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head>
+
+<body>
+    <div id="main" class="h-screen mt-20 flex items-center justify-center flex-col">
+        <div class="bg-gray-300 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-1/2 ">
+            <h1 class="text-xl font-extrabold leading-normal my-10 ">Lab01 - Operações sobre TADs - Array</h1>
+            <div class="mb-4">
+                <div class="flex gap-4 items-center justify-center">
+                    <input class="w-full py-2 px-4 text-gray-700 focus:outline-none focus:shadow-outline" type="text"
+                        name="elemento" id="elemento" list="numeros" placeholder="Digite um valor">
+                    <input class="w-full py-2 px-4 text-gray-700 focus:outline-none focus:shadow-outline" type="text"
+                        name="addPos" id="addPos" list="numeros" placeholder="Digite a posição" min="0" value="0">
+
+                </div>
+            </div>
+            <div class="flex justify-around flex-col gap-5">
+                <input type="button" id="buttonappend"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="append">
+                <input type="button" id="buttoninsert"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="insert">
+                <input type="button" id="buttonremove"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="remove">
+                <input type="button" id="buttonremoveAt"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="removeAt">
+                <input type="button" id="buttonindexOf"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="indexOf">
+                <input type="button" id="buttonsize"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="size">
+                <input type="button" id="buttonisEmpty"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="isEmpty">
+                <input type="button" id="buttonclear"
+                    class="bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    value="clear">
+            </div>
+            <p class="mt-10"> Veja os dados de sua TAD </p>
+            <div id="meuArray" class="bg-sky-700 shadow-md rounded p-5 mt-4  flex gap-8"></div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
